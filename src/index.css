@@ -1,8 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +12,86 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#connect .swiper-pagination{
+  bottom: 0px;
+}
+#connect .swiper-pagination-bullet-active{
+  background: black;
+}
+#connect .swiper-pagination-bullet{
+  margin: 0;
+  height: 4px;
+  width: 100px;
+  border-radius: 0px;
+}
+.swiper-slide {
+
+}
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+}
+.main {
+  --bg-image: url(/public/images/library/can.png);
+  background-size: 100%;
+}
+.bg1 {
+  background-position: -200px 0;
+  background-size: 280%;
+}
+
+.child {
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+}
+.bg2 {
+  background-position: 80% 0;
+  background-repeat: no-repeat;
+  background-size: 290%;
+}
+.bg3 {
+  background-position: 0 100%;
+  background-size: 300%;
+}
+.bg4 {
+  background-position: bottom;
+  background-size: 300%;
+}
+.bg5 {
+  background-position: 100% 100%;
+  background-size: 320%;
+}
+#mentor .swiper{
+  position: unset;
+}
+#mentor .swiper-button-prev{
+  left: -30px;
+  color: #fff;
+  background-color: rgb(29 78 216);
+  border-radius: 9999999px;
+  width: 4rem;
+  height: 4rem;
+}
+#mentor .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: 600;
+}
+#mentor .swiper-button-next {
+  right: -30px;
+  color: #fff;
+  background-color: rgb(29 78 216);
+  border-radius: 9999999px;
+  width: 4rem;
+  height: 4rem;
+}
+#mentor .swiper-button-next::after {
+  font-size: 20px;
+  font-weight: 600;
+}
+#mentor .swiper-button-disabled{
+  display: none;
 }

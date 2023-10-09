@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import HomePage from './pages/Home/home';
+import LawLibraty from './pages/LawLibrary/lawLibraty';
+import Connect from './pages/Connect/connect';
+import Advise from './pages/Advise/advise';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/thu-vien-luat",
+    element: <LawLibraty />
+  },
+  {
+    path: "/ket-noi",
+    element: <Connect />
+  },
+  {
+    path: "/tu-van",
+    element: <Advise />
+  }
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='max-w-[1920px] mx-auto'>
+      <RouterProvider router={router} />
     </div>
   );
 }

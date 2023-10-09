@@ -3,8 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { register } from "swiper/element/bundle";
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+register();
 root.render(
   <React.StrictMode>
     <App />
