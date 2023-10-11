@@ -17,6 +17,7 @@ const MENU = [
 				color="#fff"
 			/>
 		),
+		link: "/",
 	},
 	{
 		id: 2,
