@@ -10,7 +10,7 @@ export default function Solution() {
       base: "flex text-center",
       styles: {
         pills:
-          "flex justify-between font-semibold text-3xl text-gray-500 dark:text-gray-400 gap-x-6",
+          "flex justify-between font-semibold sm:text-2xl md:text-3xl text-gray-500 dark:text-gray-400 gap-x-6 overflow-x-auto",
       },
       tabitem: {
         base: "flex items-center justify-center p-4 rounded-t-lg font-medium first:ml-0",
@@ -39,29 +39,29 @@ export default function Solution() {
   };
   return (
     <div className="mt-10">
-      <h1 className="text-[54px] font-medium text-blue-700 text-center mb-8">
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-loose xl:leading-tight xl:text-[56px] font-medium text-blue-700 text-center mb-8">
         GIẢI PHÁP BÁN HÀNG TỪ ONLINE ĐẾN OFFLINE
       </h1>
-      <div className="mb-4 px-40">
+      <div className="mb-4 px-8 md:px-16 lg:px-24 xl:px-40">
         <Tabs.Group
           aria-label="Pills"
-          style='pills'
+          style="pills"
           theme={customTheme}
           ref={tabsRef}
           onActiveTabChange={(tab) => setActiveTab(tab)}
         >
           <Tabs.Item active title="BÁN HÀNG ĐA KÊNH">
             <div
-              className=" flex"
+              className="flex flex-col md:flex-row"
               id="profile"
               role="tabpanel"
               aria-labelledby="profile-tab"
             >
-              <div className="basis-1/2">
+              <div className="basis-full md:basis-1/2">
                 <img src="/images/home/gp1.png" alt="" />
               </div>
-              <div className="basis-1/2 pl-32">
-                <h2 className="text-4xl font-medium text-black">
+              <div className="basis-full md:basis-1/2 pl-0 xl:pl-10 2xl:pl-32">
+                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium text-black mt-8 md:mt-0">
                   PHẦN MỀM QUẢN LÝ BÁN HÀNG ĐA KÊNH TẬP TRUNG
                 </h2>
                 <p className="text-lg font-light my-8">
@@ -71,7 +71,7 @@ export default function Solution() {
                   quy trình bán hàng và giảm thiểu sai sót, giúp bạn tăng doanh
                   số và nâng cao hiệu quà kinh doanh.
                 </p>
-                <button class="mt-2 px-3 uppercase sm:mt-4 bg-gradient-to-b from-blue-700 to-blue-400 text-white rounded text-6 py-2 !px-10">
+                <button class="mt-2 px-3 uppercase sm:mt-4 bg-gradient-to-b from-blue-700 to-blue-400 text-white rounded text-6 py-2 !px-10 w-full md:w-auto">
                   Dùng thử miễn phí
                 </button>
               </div>
