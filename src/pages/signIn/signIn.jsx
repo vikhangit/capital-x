@@ -15,13 +15,13 @@ export default function SignIn() {
 			<div className="box_background"></div>
 			<div className="box_signin_content">
 				<div className="flex flex-col justify-center items-start gap-6 w-full max-sm:gap-3">
-					<div className="p-6">
+					<div className="p-6 mx-auto">
 						<img
 							src={"/images/menuhome/logo_capx.png"}
 							alt="logo"
 						/>
 					</div>
-					<span className="text-sm font-light text-white">
+					<span className="text-sm font-light">
 						Chưa có tài khoản? &nbsp;
 						<b
 							className="text-[#1A68FA] font-bold cursor-pointer"
@@ -71,7 +71,7 @@ export default function SignIn() {
 									noStyle
 								>
 									<Checkbox>
-										<h4 className="text-sm font-light text-white">
+										<h4 className="text-sm font-light">
 											Nhớ tài khoản
 										</h4>
 									</Checkbox>
