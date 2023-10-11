@@ -44,6 +44,10 @@ code {
   background-size: 280%;
 }
 
+.hidden-text{
+  
+}
+
 .child {
   background-image: var(--bg-image);
   background-repeat: no-repeat;
