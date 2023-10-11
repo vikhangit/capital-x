@@ -1,0 +1,263 @@
+.box_menu_home {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+.box_background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../../../public/images/menuhome/background_capx.jpg");
+	filter: blur(3px);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+@keyframes scale_up_box_circle_menu {
+	0% {
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
+	100% {
+		width: 800px;
+		height: 800px;
+		opacity: 1;
+	}
+}
+.box_circle_menu {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 800px;
+	border-radius: 100%;
+	border: 1px solid #fff;
+	transition: all 1s ease-in;
+	animation: scale_up_box_circle_menu 3s ease-in;
+}
+.box_circle_menu_item {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	position: absolute;
+	background-color: #3b4d5d;
+	cursor: pointer;
+	filter: blur(1px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff;
+	transition: all 0.5s ease-in;
+}
+.item_menu_1 {
+	top: 0%;
+	right: 20%;
+}
+.item_menu_1::after {
+	content: "ĐÀO TẠO";
+	width: 100px;
+	height: 10px;
+	position: absolute;
+	color: #fff;
+	left: 100%;
+	top: 10%;
+}
+.item_menu_2 {
+	top: 20%;
+	right: 0%;
+}
+.item_menu_2::after {
+	content: "TƯ VẤN IPO";
+	width: 100px;
+	height: 10px;
+	position: absolute;
+	color: #fff;
+	left: 100%;
+	top: 10%;
+}
+.item_menu_3 {
+	top: 45%;
+	right: -6%;
+}
+.item_menu_3::after {
+	content: "THƯ VIỆN LUẬT";
+	width: 150px;
+	height: 10px;
+	position: absolute;
+	color: #fff;
+	left: 100%;
+	top: 10%;
+}
+.item_menu_4 {
+	top: 74%;
+	right: 4%;
+}
+.item_menu_4::after {
+	content: "KẾT NỐI";
+	width: 100px;
+	height: 10px;
+	position: absolute;
+	color: #fff;
+	left: 100%;
+	top: 10%;
+}
+.item_menu_5 {
+	top: 91%;
+	right: 27%;
+}
+.item_menu_5::after {
+	content: "QUẢN LÝ DOANH NGHIỆP";
+	width: 200px;
+	height: 10px;
+	position: absolute;
+	color: #fff;
+	left: 100%;
+	top: 10%;
+}
+@keyframes blur_item {
+	0% {
+		filter: blur(1px);
+	}
+	100% {
+		filter: blur(0px);
+	}
+}
+.box_circle_menu_item:hover {
+	animation: blur_item 0.5s ease-in;
+	filter: blur(0px);
+}
+.box_circle_menu_item_active {
+	animation: blur_item 0.5s ease-in;
+	filter: blur(0px) !important;
+}
+@keyframes scale_up_box_circle_menu_small {
+	0% {
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
+	100% {
+		width: 620px;
+		height: 620px;
+		opacity: 1;
+	}
+}
+.box_circle_menu_small {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 620px;
+	height: 620px;
+	border-radius: 100%;
+	border: 1px solid #fff;
+	transition: all 1s ease-in;
+	animation: scale_up_box_circle_menu_small 3s ease-in;
+}
+
+@keyframes scale_up_box_circle_content {
+	0% {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		filter: blur(3px);
+	}
+	100% {
+		width: 600px;
+		height: 600px;
+		filter: blur(0px);
+		opacity: 1;
+	}
+}
+.box_circle_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 600px;
+	border-radius: 100%;
+	background-image: url("../../../public/images/menuhome/background_capx.jpg");
+	background-size: cover;
+	background-position: center;
+	transition: all 1s ease-in;
+	animation: scale_up_box_circle_content 3s ease-in;
+}
+
+@keyframes reponsice_menu {
+	0% {
+		left: 50%;
+	}
+	100% {
+		left: 0%;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.box_circle_menu {
+		width: 600px;
+		height: 600px;
+	}
+	.box_circle_menu_small {
+		width: 420px;
+		height: 420px;
+	}
+	.box_circle_content {
+		width: 400px;
+		height: 400px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.box_circle_menu {
+		animation: reponsice_menu 1s ease-in;
+		left: 0%;
+	}
+	.box_circle_menu_small {
+		animation: reponsice_menu 1s ease-in;
+		left: 0%;
+	}
+	.box_circle_content {
+		animation: reponsice_menu 1s ease-in;
+		left: 0%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.box_circle_menu {
+		width: 450px;
+		height: 450px;
+	}
+	.box_circle_menu_item {
+		width: 60px;
+		height: 60px;
+	}
+	.item_menu_1::after {
+		font-size: 10px;
+	}
+	.item_menu_2::after {
+		font-size: 10px;
+	}
+	.item_menu_3::after {
+		font-size: 10px;
+	}
+	.item_menu_4::after {
+		font-size: 10px;
+	}
+	.item_menu_5::after {
+		font-size: 10px;
+	}
+	.item_menu_6::after {
+		font-size: 10px;
+	}
+	.box_circle_menu_small {
+		width: 320px;
+		height: 320px;
+	}
+	.box_circle_content {
+		width: 300px;
+		height: 300px;
+	}
+}
