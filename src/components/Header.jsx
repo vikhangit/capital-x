@@ -28,7 +28,7 @@ export default function Header() {
         <Link to={"/"} className="hidden lg:block">
           <span className="xl:text-lg">NETWORK</span>
         </Link>
-        <Link to={"/homemenu"} className="block">
+        <Link to={"/sign-in"} className="block">
           <div className="flex bg-[#2970F5] rounded-lg font-normal font-bold text-white  py-2 px-3.5 items-center">
             <div className="font-bold text-xs sm:text-lg">USERNAME</div>
             <img

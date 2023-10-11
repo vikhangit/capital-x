@@ -1,0 +1,50 @@
+.box_signIn {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+.box_background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../../../public/images/menuhome/background_capx.jpg");
+	filter: blur(3px);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+.box_signin_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+}
+
+.box_signin_content .login_form input {
+	background: #ebf2ff77 !important;
+	border: none;
+	min-height: 57px;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 10px 20px;
+	min-width: 400px;
+}
+.ant-form-item-explain-error {
+	text-align: start !important;
+}
+.box_logo {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+@media screen and (max-width: 640px) {
+	.box_signin_content .login_form input {
+		min-width: 300px;
+	}
+}

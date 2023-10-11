@@ -5,6 +5,7 @@ import LawLibraty from "./pages/LawLibrary/lawLibraty";
 import Connect from "./pages/Connect/connect";
 import Advise from "./pages/Advise/advise";
 import MenuHome from "./pages/MenuHome/menuHome";
+import SignIn from "./pages/signIn/signIn";
 
 const router = createBrowserRouter([
 	{
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
 	{
 		path: "/homemenu",
 		element: <MenuHome />,
+	},
+	{
+		path: "/sign-in",
+		element: <SignIn />,
 	},
 ]);
 
