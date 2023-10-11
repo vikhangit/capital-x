@@ -47,7 +47,7 @@
 	position: absolute;
 	background-color: #3b4d5d;
 	cursor: pointer;
-	filter: blur(1px);
+	filter: blur(0);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -127,10 +127,10 @@
 		filter: blur(0px);
 	}
 }
-.box_circle_menu_item:hover {
+/* .box_circle_menu_item:hover {
 	animation: blur_item 0.5s ease-in;
 	filter: blur(0px);
-}
+} */
 .box_circle_menu_item_active {
 	animation: blur_item 0.5s ease-in;
 	filter: blur(0px) !important;
