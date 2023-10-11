@@ -26,6 +26,7 @@ const MENU = [
 				color="#fff"
 			/>
 		),
+		link: "https://admin-capitalx.vercel.app/",
 	},
 	{
 		id: 3,
@@ -66,7 +67,7 @@ export default function MenuHome() {
 			<div className="box_background"></div>
 			<div className="box_circle_menu">
 				{MENU.map((item) => (
-					<div
+					<a
 						className={`${
 							item.id === activeParent
 								? "box_circle_menu_item_active"
@@ -76,9 +77,12 @@ export default function MenuHome() {
 						onClick={() => {
 							setActiveParent(item.id);
 						}}
+						target="_blank"
+						rel="noreferrer"
+						href={item.link ? item.link : "#"}
 					>
 						{item.icon}
-					</div>
+					</a>
 				))}
 			</div>
 			<div className="box_circle_menu_small"></div>
