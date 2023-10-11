@@ -5,11 +5,12 @@ import { AiFillHome } from "react-icons/ai";
 import { PiUsersThreeFill } from "react-icons/pi";
 import { ImLibrary } from "react-icons/im";
 import { SiNginxproxymanager } from "react-icons/si";
+import { FaUserAstronaut } from "react-icons/fa";
 
 const MENU = [
 	{
 		id: 1,
-		name: "Đào tạo",
+		name: "Home",
 		icon: (
 			<AiFillHome
 				className="w-12 h-12 max-sm:w-8 max-sm:h-8"
@@ -19,6 +20,16 @@ const MENU = [
 	},
 	{
 		id: 2,
+		name: "Đào tạo",
+		icon: (
+			<FaUserAstronaut
+				className="w-12 h-12 max-sm:w-8 max-sm:h-8"
+				color="#fff"
+			/>
+		),
+	},
+	{
+		id: 3,
 		name: "Tư vấn IPO",
 		icon: (
 			<MdBusinessCenter
@@ -29,7 +40,7 @@ const MENU = [
 		link: "https://admin-capitalx.vercel.app/",
 	},
 	{
-		id: 3,
+		id: 4,
 		name: "Thư viện luật",
 		icon: (
 			<ImLibrary
@@ -39,7 +50,7 @@ const MENU = [
 		),
 	},
 	{
-		id: 4,
+		id: 5,
 		name: "Kết nối",
 		icon: (
 			<PiUsersThreeFill
@@ -49,7 +60,7 @@ const MENU = [
 		),
 	},
 	{
-		id: 5,
+		id: 6,
 		name: "Quản lý doanh nghiệp",
 		icon: (
 			<SiNginxproxymanager

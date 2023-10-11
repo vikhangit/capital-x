@@ -55,10 +55,23 @@
 	transition: all 0.5s ease-in;
 }
 .item_menu_1 {
-	top: 0%;
-	right: 20%;
+	top: -6%;
+	right: 34%;
 }
 .item_menu_1::after {
+	content: "HOME";
+	width: 200px;
+	height: 10px;
+	position: absolute;
+	color: #fff;
+	left: 100%;
+	top: 10%;
+}
+.item_menu_2 {
+	top: 6%;
+	right: 11%;
+}
+.item_menu_2::after {
 	content: "ĐÀO TẠO";
 	width: 100px;
 	height: 10px;
@@ -67,11 +80,11 @@
 	left: 100%;
 	top: 10%;
 }
-.item_menu_2 {
-	top: 20%;
-	right: 0%;
+.item_menu_3 {
+	top: 25%;
+	right: -3%;
 }
-.item_menu_2::after {
+.item_menu_3::after {
 	content: "TƯ VẤN IPO";
 	width: 100px;
 	height: 10px;
@@ -80,11 +93,11 @@
 	left: 100%;
 	top: 10%;
 }
-.item_menu_3 {
-	top: 45%;
+.item_menu_4 {
+	top: 51%;
 	right: -6%;
 }
-.item_menu_3::after {
+.item_menu_4::after {
 	content: "THƯ VIỆN LUẬT";
 	width: 150px;
 	height: 10px;
@@ -93,11 +106,11 @@
 	left: 100%;
 	top: 10%;
 }
-.item_menu_4 {
+.item_menu_5 {
 	top: 74%;
 	right: 4%;
 }
-.item_menu_4::after {
+.item_menu_5::after {
 	content: "KẾT NỐI";
 	width: 100px;
 	height: 10px;
@@ -106,11 +119,11 @@
 	left: 100%;
 	top: 10%;
 }
-.item_menu_5 {
+.item_menu_6 {
 	top: 91%;
 	right: 27%;
 }
-.item_menu_5::after {
+.item_menu_6::after {
 	content: "QUẢN LÝ DOANH NGHIỆP";
 	width: 200px;
 	height: 10px;
