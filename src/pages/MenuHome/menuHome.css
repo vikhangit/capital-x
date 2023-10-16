@@ -59,7 +59,7 @@
 	right: 34%;
 }
 .item_menu_1::after {
-	content: "HOME";
+	content: "TRANG CHỦ";
 	width: 200px;
 	height: 10px;
 	position: absolute;
