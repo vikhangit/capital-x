@@ -10,7 +10,7 @@ import { FaUserAstronaut } from "react-icons/fa";
 const MENU = [
 	{
 		id: 1,
-		name: "Home",
+		name: "Trang chủ",
 		icon: (
 			<AiFillHome
 				className="w-12 h-12 max-sm:w-8 max-sm:h-8"
